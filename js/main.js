@@ -3,8 +3,7 @@ let totalCarrito = document.getElementById("totalCarrito");
 let precioTotal = 0;
 totalCarrito.innerHTML = `${precioTotal} Animales Libres`;
 
-//Declaramos el objeto
-
+//Delcarion de objetos
 let objetos = [
     {
         id: "leon",
@@ -21,25 +20,54 @@ let objetos = [
     {
         id: "serpiente",
         valor: 1
-    }
+    },
+    {
+        id: "loro",
+        valor: 1
+    },
+    
+    {
+        id: "swiper",
+        valor: -1
+    },
+
+    {
+        id: "lobo",
+        valor: -2
+    },
+    
+    {
+        id: "ardilla",
+        valor: 1
+    },
 ];
 
 const vaciar = () =>{
     precioTotal = 0;
     totalCarrito.innerHTML = `${precioTotal} Animales Libres`;
-
 }
 
 
 const drag = (ev) => {
     ev.dataTransfer.setData("text", ev.target.id);
-    // console.log("arrastrando...", ev.target.id);
 };
-// permite soltar en el alemento con esta propiedad
+
+
 const allowDrop = (ev) => {
     ev.preventDefault();
 };
 
+const leon = document.getElementById('leon');
+leon.addEventListener('dragstart', ()=>{
+    // elem.addEventListener("rojo", rojo);
+    leon.classList.add("imagen")
+
+    console.log("arrastrando")
+})
+
+// leon.addEventListener('dragend', ()=>{
+//     leon.classList.remove("")
+// })
 
 const drop = (ev) => {
     ev.preventDefault();
@@ -48,13 +76,12 @@ const drop = (ev) => {
 
     let secuestrado = document.getElementById(data);
     secuestrado.classList.add("disable");
-            // ev.target.appendChild(document.getElementById(data));
+     // ev.target.appendChild(document.getElementById(data));
     
     let objetoDeseo = objetos.find(objeto => {
         return objeto.id == data
     });
 
     precioTotal += objetoDeseo.valor;
-
     totalCarrito.innerHTML = `${precioTotal} Animales liberados`;
 };

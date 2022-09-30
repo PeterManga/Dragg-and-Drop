@@ -9,14 +9,21 @@
     <link href="css/styles.css" rel="stylesheet"/>
 </head>
 <body>
-
     <div class="general">
         <div class="showcase">
+            <div><h1>salva a los animales</h1></div>
+
             <div class="contenedorShowcase">
-                <div class="contenedorItem"><img src="./img/lion.png" id="leon" class="imagenDisplay" alt="leonz" draggable="true" ondragstart="drag(event)"/></div>
+                <div class="contenedorItem"><img src="./img/lobo.png" id="lobo" class="imagenDisplay" alt="lobo" draggable="true" ondragstart="drag(event)"/></div>
                 <div class="contenedorItem"><img src="./img/snake.png" id="serpiente" class="imagenDisplay" alt="serpiente" draggable="true" ondragstart="drag(event)"/></div>
                 <div class="contenedorItem"><img src="./img/owl.png" id="buho" class="imagenDisplay" alt="buho" draggable="true" ondragstart="drag(event)"/></div>
-                <div class="contenedorItem"><img src="./img//monkey.png" id="mono" alt="imagen mono" class="imagenDisplay" draggable="true" ondragstart="drag(event)"></div>
+                <div class="contenedorItem"><img src="./img/monkey.png" id="mono" alt="imagen mono" class="imagenDisplay" draggable="true" ondragstart="drag(event)"></div>
+            </div>
+            <div class="contenedorShowcase">
+                <div class="contenedorItem"><img src="./img/ardilla.png" id="ardilla" class="imagenDisplay" alt="ardilla" draggable="true" ondragstart="drag(event)"/></div>
+                <div class="contenedorItem"><img src="./img/peresozo.png" id="peresozo" class="imagenDisplay" alt="peresozo" draggable="true" ondragstart="drag(event)"/></div>
+                <div class="contenedorItem"><img src="./img/swiper.png" id="swiper" class="imagenDisplay" alt="swiper" draggable="true" ondragstart="drag(event)"/></div>
+                <div class="contenedorItem"><img src="./img/lion.png" id="leon" class="imagenDisplay" alt="leon" draggable="true" ondragstart="drag(event)"/></div>
             </div>
             
         </div>
@@ -24,13 +31,11 @@
         <div class="cart">
             <div class="contenedorCart">
                 <div class="actualCart">
-                    <img src="./img/selva.png" id="contenedor1" class="pictures" ondrop="drop(event)" ondragover="allowDrop(event)"/>
+                    <img src="./img/selva.png" id="contenedor1" class="arbol" ondrop="drop(event)" ondragover="allowDrop(event)"/>
                 </div>
-                <div id="totalCarrito" class="totalPrice"></div>
-                <div class="boton" onclick="vaciar( )">PULSAME!</div>
-
-            </div>
         </div>
+        <div id="totalCarrito" class="totalPrice"></div>
+        <div class="boton" onclick="vaciar( )">TRY AGAIN!</div>
     </div>
 
     <script src="js/main.js"></script>
