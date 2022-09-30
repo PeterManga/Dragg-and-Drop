@@ -1,9 +1,9 @@
 
-let totalCarrito = document.getElementById("totalCarrito");
+let totalAnimales = document.getElementById("totalAnimales");
 let precioTotal = 0;
-totalCarrito.innerHTML = `${precioTotal} Animales Libres`;
+totalAnimales.innerHTML = `${precioTotal} Animales Libres`;
 
-//Delcarion de objetos
+//Declacion de objetos
 let objetos = [
     {
         id: "leon",
@@ -22,7 +22,7 @@ let objetos = [
         valor: 1
     },
     {
-        id: "loro",
+        id: "ardilla",
         valor: 1
     },
     
@@ -37,51 +37,56 @@ let objetos = [
     },
     
     {
-        id: "ardilla",
+        id: "perezoso",
         valor: 1
     },
 ];
 
+//boton vaciar
 const vaciar = () =>{
     precioTotal = 0;
-    totalCarrito.innerHTML = `${precioTotal} Animales Libres`;
+    totalAnimales.innerHTML = `${precioTotal} Animales Libres`;
 }
 
-
+//arrastrar usando la id 
 const drag = (ev) => {
     ev.dataTransfer.setData("text", ev.target.id);
 };
 
-
+//permitir drop
 const allowDrop = (ev) => {
     ev.preventDefault();
 };
 
-const leon = document.getElementById('leon');
-leon.addEventListener('dragstart', ()=>{
-    // elem.addEventListener("rojo", rojo);
-    leon.classList.add("imagen")
+//pruebas constante leon
+// const leon = document.getElementById('leon');
+// leon.addEventListener('dragstart', ()=>{
+//     // elem.addEventListener("rojo", rojo);
+//     leon.classList.add("imagen")
 
-    console.log("arrastrando")
-})
+//     console.log("arrastrando")
+// })
 
 // leon.addEventListener('dragend', ()=>{
 //     leon.classList.remove("")
 // })
 
+// constante drop
 const drop = (ev) => {
     ev.preventDefault();
     let data = ev.dataTransfer.getData("text");
     console.log(data);
-
     let secuestrado = document.getElementById(data);
-    secuestrado.classList.add("disable");
-     // ev.target.appendChild(document.getElementById(data));
-    
+    secuestrado.classList.add("disable");    
     let objetoDeseo = objetos.find(objeto => {
         return objeto.id == data
     });
 
     precioTotal += objetoDeseo.valor;
-    totalCarrito.innerHTML = `${precioTotal} Animales liberados`;
+    totalAnimales.innerHTML = `${precioTotal} Animales liberados`;
 };
+
+//precio total negativo
+if (precioTotal < 0 ){
+    console.log("se han comido a todos tus animales")
+}

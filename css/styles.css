@@ -2,15 +2,6 @@ h1{
     justify-content: center;
     text-align: center;
 }
-/* body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
-
-    display: flex;
-    flex-direction: row;
-} */
 .general {
 
     display: flex;
@@ -22,12 +13,9 @@ h1{
 }
 
 .showcase {
-
     width: 40em;
-    /* background-color: crimson; */
     background-color: green;
     height: 60vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,9 +27,6 @@ h1{
 .contenedorShowcase {
     height: 50em;
     width: 48em;
-    /* background-color: dodgerblue; */
-
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -62,8 +47,7 @@ h1{
 }
 
 .imagenDisplay {
-    height: 10em;
-    /* border: 0.2em solid black; */
+    height: 8em;
 }
 
 .cart {
@@ -90,12 +74,13 @@ h1{
     align-items: center;
 }
 
-.totalPrice {
+.totalAnimales {
     height: 3em;
     font-size:2em;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .pictures {
@@ -121,9 +106,6 @@ h1{
     align-items: center;
 }
 
-.totalPrice{
-    text-align: center;
-}
 .rojo{
     background-color: red;
 }
