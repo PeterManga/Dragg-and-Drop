@@ -1,7 +1,7 @@
 
 let totalAnimales = document.getElementById("totalAnimales");
 let precioTotal = 0;
-totalAnimales.innerHTML = `${precioTotal} Animales Libres`;
+totalAnimales.innerHTML = `${precioTotal} Animales Soltadosgit a`;
 
 //Declacion de objetos
 let objetos = [
