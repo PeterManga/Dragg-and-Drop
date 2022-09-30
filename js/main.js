@@ -1,7 +1,7 @@
 
 let totalAnimales = document.getElementById("totalAnimales");
-let precioTotal = 0;
-totalAnimales.innerHTML = `${precioTotal} Animales Soltadosgit a`;
+let animalesSalvados = 0;
+totalAnimales.innerHTML = `${animalesSalvados} Animales Soltados`;
 
 //Declacion de objetos
 let objetos = [
@@ -44,8 +44,8 @@ let objetos = [
 
 //boton vaciar
 const vaciar = () =>{
-    precioTotal = 0;
-    totalAnimales.innerHTML = `${precioTotal} Animales Libres`;
+    animalesSalvados = 0;
+    totalAnimales.innerHTML = `${animalesSalvados} Animales Libres`;
 }
 
 //arrastrar usando la id 
@@ -58,23 +58,11 @@ const allowDrop = (ev) => {
     ev.preventDefault();
 };
 
-//pruebas constante leon
-// const leon = document.getElementById('leon');
-// leon.addEventListener('dragstart', ()=>{
-//     // elem.addEventListener("rojo", rojo);
-//     leon.classList.add("imagen")
-
-//     console.log("arrastrando")
-// })
-
-// leon.addEventListener('dragend', ()=>{
-//     leon.classList.remove("")
-// })
-
 // constante drop
 const drop = (ev) => {
     ev.preventDefault();
     let data = ev.dataTransfer.getData("text");
+    //muestra por consola el dato añadito
     console.log(data);
     let secuestrado = document.getElementById(data);
     secuestrado.classList.add("disable");    
@@ -82,11 +70,11 @@ const drop = (ev) => {
         return objeto.id == data
     });
 
-    precioTotal += objetoDeseo.valor;
-    totalAnimales.innerHTML = `${precioTotal} Animales liberados`;
+    animalesSalvados += objetoDeseo.valor;
+    totalAnimales.innerHTML = `${animalesSalvados} Animales liberados`;
 };
 
-//precio total negativo
-if (precioTotal < 0 ){
-    console.log("se han comido a todos tus animales")
+//animales total negativo
+if (animalesSalvados < 0 ){
+    console.log("se han comido a todos tus animales");
 }

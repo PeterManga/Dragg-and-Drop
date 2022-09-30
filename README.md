@@ -5,22 +5,25 @@ En este proyecto haremos uso de las propiedades Dragg and Drop y demostraremos s
 
 Podemos acceder directamente al index desde este enlace [drag&drop](https://github.com/PeterManga/Dragg-and-Drop/blob/c4412d9cb5a0a06a238a06c781a25a279ab67c68/index.html).
 
-![demo](/img/demo2.png)
+![demo](./img/fondo1.png)
 
 Nuestro objetivo será liberar a la mayior cantidad posible de animales.
 ## Haremos uso de las siguientes tecnologias
 
-![html](/img/javascript.png) ![html](/img/css.png) ![html](/img/html.png)
+![html](./img/javascript.png) ![html](./img/css.png) ![html](./img/html.png)
 
-## Futuras Mejoras ![updates](/img/update.png)
+## Futuras Mejoras ![updates](./img/update.png)
 Introducir una reja en frente de los animales para simbolizar que estan  siendo retenidos y tenemos que liberarlos en la selva
+Animacion de cambio de imagen al arrastrar un animal a la selva
+sonido característico de cada animal al seleccionarlo.
+animacion al lograr cierca cantidad de animales liberados, y al no conseguirlo.
 
-## Agradecimientos ![congrats](/img/agradecimientos.png)
+## Agradecimientos ![congrats](./img/agradecimientos.png)
 A todo el personal de urbalab, a mis compañeros y en especial al profesor David que ha estado muy atento a todos nosotros
 
-## Contacto ![contacto](/img/contacto.png)
+## Contacto ![contacto](./img/contacto.png)
 
-![gmail](/img/GMAIL.png) man.pedrom@gmail.com
+![gmail](./img/GMAIL.png) man.pedrom@gmail.com
 
 
 
