@@ -1,7 +1,8 @@
-h1{
+h1 {
     justify-content: center;
     text-align: center;
 }
+
 .general {
 
     display: flex;
@@ -9,7 +10,7 @@ h1{
     justify-content: center;
     align-items: center;
     background-color: green;
-    
+
 }
 
 .showcase {
@@ -33,7 +34,8 @@ h1{
     align-items: center;
 
 }
-.columna{
+
+.columna {
     display: flex;
     flex-direction: column;
 }
@@ -50,7 +52,7 @@ h1{
     height: 8em;
 }
 
-.cart {
+.selva {
     width: 40em;
     background-color: greenyellow;
     height: 100vh;
@@ -62,12 +64,12 @@ h1{
 
 }
 
-.contenedorCart {
+.contenedorselva {
     height: 20em;
     width: 15em;
 }
 
-.actualCart {
+.actualselva {
     height: 17em;
     display: flex;
     justify-content: center;
@@ -76,7 +78,7 @@ h1{
 
 .totalAnimales {
     height: 3em;
-    font-size:2em;
+    font-size: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +89,7 @@ h1{
     height: 10em;
 }
 
-.boton{
+.boton {
     height: 2.5em;
     width: 8em;
     background-color: green;
@@ -100,22 +102,26 @@ h1{
     align-items: center;
     cursor: pointer;
 }
-.dboton{
+
+.dboton {
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
-.dora.{
+.dora. {
     height: 5em;
     width: 8em;
 }
+
 .imagenNO {
     visibility: hidden;
-  }
+}
+
 .imagen {
     visibility: visible;
-  }
-  .arbol {
+}
+
+.arbol {
     height: 20em;
 }

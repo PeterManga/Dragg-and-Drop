@@ -25,7 +25,7 @@ let objetos = [
         id: "ardilla",
         valor: 1
     },
-    
+
     {
         id: "swiper",
         valor: -1
@@ -35,7 +35,7 @@ let objetos = [
         id: "lobo",
         valor: -2
     },
-    
+
     {
         id: "perezoso",
         valor: 1
@@ -43,7 +43,7 @@ let objetos = [
 ];
 
 //boton vaciar
-const vaciar = () =>{
+const vaciar = () => {
     animalesSalvados = 0;
     totalAnimales.innerHTML = `${animalesSalvados} Animales Libres`;
 }
@@ -64,8 +64,6 @@ const drop = (ev) => {
     let data = ev.dataTransfer.getData("text");
     //muestra por consola el dato añadito
     console.log(data);
-    let secuestrado = document.getElementById(data);
-    secuestrado.classList.add("disable");    
     let objetoDeseo = objetos.find(objeto => {
         return objeto.id == data
     });
@@ -75,6 +73,6 @@ const drop = (ev) => {
 };
 
 //animales total negativo
-if (animalesSalvados < 0 ){
-    console.log("se han comido a todos tus animales");
-}
+// if (animalesSalvados < 0 ){
+//     console.log("se han comido a todos tus animales");
+// }
